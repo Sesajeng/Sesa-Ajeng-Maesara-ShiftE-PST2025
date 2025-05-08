@@ -1,13 +1,12 @@
 #include <Arduino.h>
 #include <Wire.h>
 
-// Tetapkan pin I2C kustom
-int SDA_PIN = D2;  // GPIO16
-int SCL_PIN = D3;  // GPIO5
+int SDA_PIN = D2; 
+int SCL_PIN = D3;  
 
 void setup() {
   Serial.begin(9600);
-  Wire.begin(SDA_PIN, SCL_PIN);  // Mulai komunikasi I2C pada pin kustom
+  Wire.begin(SDA_PIN, SCL_PIN);  
   Serial.println("Memulai I2C Scanner...");
 }
 
@@ -41,5 +40,5 @@ void loop() {
   else
     Serial.println("Pencarian selesai.\n");
 
-  delay(5000);  // Tunggu 5 detik sebelum scan ulang
+  delay(5000); 
 }

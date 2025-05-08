@@ -2,8 +2,8 @@
 #include <LiquidCrystal_I2C.h>
 
 LiquidCrystal_I2C lcd(0x27, 26, 2);
-int SDA_PIN = D2;  // GPIO16
-int SCL_PIN = D3;  // GPIO5
+int SDA_PIN = D2;  
+int SCL_PIN = D3;  
 
 void setup() {
  Wire.begin(SDA_PIN, SCL_PIN);
